@@ -44,8 +44,7 @@ htmlcov/
 .coverage
 .coverage.*
 .cache
-nosetests.xml
-coverage.xml
+nosetests.xml coverage.xml
 *.cover
 *.py,cover
 .hypothesis/
@@ -127,3 +126,6 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# Fast F1 cache
+cache
