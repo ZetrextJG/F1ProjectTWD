@@ -39,3 +39,6 @@ def was_raining(time):
     session.weather_data.to_clipboard()
     index = bisect_left(session.weather_data['Time'], time)
     return session.weather_data['Rainfall'][index]
+
+def sub_cmap(cmap, vmin, vmax):
+    return lambda v: cmap(vmin + (vmax - vmin) * v)

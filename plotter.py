@@ -8,6 +8,8 @@ from matplotlib.collections import LineCollection
 from matplotlib.colors import ListedColormap
 from matplotlib import cm
 
+from utilities import sub_cmap
+
 fastf1.Cache.enable_cache('/Users/jakublange/desktop/twd/f1moje/')
 
 ses = fastf1.get_session(2022, "Monaco Grand Prix", "R")
@@ -81,7 +83,7 @@ def create_lc(
 
 def plot_points(axis, points):
    for p in points:
-    axis.plot(p[0], p[1], marker='o', color='black', alpha=.6, markersize=2)  
+    axis.plot(p[0], p[1], marker='^', color='black', alpha=.8, markersize=2)  
 
 x = np.array(perez_data_norain["X"].values)
 y = np.array(perez_data_norain["Y"].values)
@@ -122,6 +124,5 @@ colorbar = fig.colorbar(lc_comp2, ax=axes.ravel().tolist(), shrink=0.95)
 colorbar.ax.tick_params(color="white", labelcolor="white")
 colorbar.set_label("Throttle", color="white")
 
-plt.show()
-# plt.savefig("Perez.png", transparent=False)
+plt.savefig("Perez_throttle_overtakes.png", transparent=False)
 
