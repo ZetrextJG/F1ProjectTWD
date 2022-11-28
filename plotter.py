@@ -7,7 +7,7 @@ from matplotlib.collections import LineCollection
 
 from get_overtakes import get_overtakes
 
-ff1.Cache.enable_cache('/Users/jakublange/desktop/twd/f1moje/')
+ff1.Cache.enable_cache("./cache")
 
 colormap = mpl.cm.coolwarm
 

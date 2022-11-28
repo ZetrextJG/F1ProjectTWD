@@ -2,7 +2,7 @@ from bisect import bisect_left
 import fastf1 as ff1
 
 def get_overtakes():
-    ff1.Cache.enable_cache('/Users/jakublange/desktop/twd/f1moje/')
+    ff1.Cache.enable_cache("./cache")
     session = ff1.get_session(2022, "Monaco Grand Prix", identifier='R')
     session.load(weather = False, messages = False)
     laps = session.laps.pick_driver('PER')
