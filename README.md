@@ -24,4 +24,4 @@ https://www.figma.com/file/3HZGenOZIsSppDshguRAey/Plakat?node-id=0%3A1
 
 ### Final product
 
-![f1 poster](https://github.com/ZetrextJG/F1ProjectTWD/main/F1_Red_Bull_Racing.png.png?raw=true)
+![f1 poster](F1_Red_Bull_Racing.png)
